@@ -2,20 +2,24 @@
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
+	
+	public float speed = 6.0F;
+	public float jumpSpeed = 8.0F;
+	public float gravity = 20.0F;
 
-	Animator animator;
+	private Vector3 moveDirection = Vector3.zero;
 
-	// Use this for initialization
-	void Start () {
-		animator = GetComponent<Animator>();
-	}
+	void Update() {
+		CharacterController controller = GetComponent<CharacterController>();
+		if (controller.isGrounded) {
+			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+			moveDirection = transform.TransformDirection(moveDirection);
+			moveDirection *= speed;
+			if (Input.GetButton("Jump"))
+				moveDirection.y = jumpSpeed;
 
-
-	// Update is called once per frame
-	void Update () {
-		bool spaceDown = Input.GetKeyDown (KeyCode.Space);	
-		if (spaceDown) {
-			animator.SetTrigger("JumpTrigger");
 		}
+		moveDirection.y -= gravity * Time.deltaTime;
+		controller.Move(moveDirection * Time.deltaTime);
 	}
 }

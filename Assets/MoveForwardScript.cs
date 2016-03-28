@@ -9,10 +9,10 @@ public class MoveForwardScript : MonoBehaviour {
 	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
 	private int curPlayerPositionIndex = 2;
 
+	private bool waitingForHorizontalAxisInput = true;
+
 	private Transform enteredTurnSegment = null;
 
-	private bool waitingForHorizontalAxisInput = true;
-	
 	// Update is called once per frame
 	void Update () {
 		transform.Translate (Vector3.forward * Time.deltaTime * speed);
@@ -22,11 +22,25 @@ public class MoveForwardScript : MonoBehaviour {
 				waitingForHorizontalAxisInput = false;
 
 				Transform player = transform.GetChild (0);
+				Transform wallDetectorLeft = transform.FindChild ("wallDetectorLeft");
+				Transform wallDetectorRight = transform.FindChild ("wallDetectorRight");
 
-				if (enteredTurnSegment != null) {
-					turnAccordingToInput (player);
-				} else {
-					switchLaneAccordingToInput (player);
+				if(Input.GetAxisRaw("Horizontal") > 0){
+					//TODO TurnCharacterRight or switch Lane to right
+					if (wallDetectorRight.GetComponent<WallDetectorScript>().isDetectingWall ()) {
+						switchLaneAccordingToInput (player);
+					} else if(enteredTurnSegment != null){
+						turnAccordingToInput (player);
+					}	
+				}
+
+				if(Input.GetAxisRaw("Horizontal") < 0){
+					//TODO TurnCharacterLeft or switch Lane to left
+					if (wallDetectorLeft.GetComponent<WallDetectorScript>().isDetectingWall ()) {
+						switchLaneAccordingToInput (player);
+					} else if(enteredTurnSegment != null) {
+						turnAccordingToInput (player);
+					}	
 				}
 			}
 		}
@@ -58,14 +72,8 @@ public class MoveForwardScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.transform.name.Contains ("L-Segment") 
-				|| other.transform.name.Contains ("T-Segment") 
-				|| other.transform.name.Contains ("O-Segment")) {
+		if (other.transform.name.Contains ("Segment")){
 			enteredTurnSegment = other.transform;
-			Debug.Log ("global: " + (enteredTurnSegment.position - transform.position));
-			Debug.Log ("local direction: " + transform.InverseTransformDirection(enteredTurnSegment.position - transform.position));
-		} else {
-			enteredTurnSegment = null;
 		}
 	}
 }

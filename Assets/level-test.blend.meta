@@ -210,6 +210,7 @@ ModelImporter:
     100404: MapObj_047
     100406: MapObj_048
     100408: MapObj_049
+    100410: GoalSegment
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -415,6 +416,7 @@ ModelImporter:
     400404: MapObj_047
     400406: MapObj_048
     400408: MapObj_049
+    400410: GoalSegment
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode

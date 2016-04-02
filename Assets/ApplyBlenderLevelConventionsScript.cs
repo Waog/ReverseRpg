@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	const string COLLIDER_OBJ = "ColliderObj";
+	const string GOAL_SEGMENT = "GoalSegment";
 
 	const string MAP_OBJ = "MapObj";
 
@@ -25,6 +26,10 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	void AddTags(Transform transform){
 		if (transform.name.Contains (COLLIDER_OBJ)) {
 			transform.tag = Tags.SEGMENT_COLLIDER;
+		}
+
+		if (transform.name.Contains (GOAL_SEGMENT)) {
+			transform.tag = Tags.GOAL_SEGMENT;
 		}
 	}
 

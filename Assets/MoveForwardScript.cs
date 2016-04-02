@@ -72,7 +72,7 @@ public class MoveForwardScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.transform.name.Contains ("Segment")){
+		if (other.transform.tag.Equals(Tags.SEGMENT_COLLIDER)){
 			enteredTurnSegment = other.transform;
 		}
 	}

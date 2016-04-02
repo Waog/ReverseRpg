@@ -14,6 +14,7 @@ public class AddMeshCollidersScript : MonoBehaviour {
 	private void AddMeshCollider(Transform transform) {
 		if (transform.name.Contains(effectedName)) {
 			transform.gameObject.AddComponent<MeshCollider> ();
+			transform.tag = Tags.SEGMENT_COLLIDER;
 			transform.GetComponent<MeshRenderer> ().enabled = false;
 		}
 

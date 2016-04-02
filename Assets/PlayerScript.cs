@@ -3,19 +3,13 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	Animator animator;
+	public Animator gameOverAC;
 
-	// Use this for initialization
-	void Start () {
-		animator = GetComponent<Animator>();
-	}
-
-
-	// Update is called once per frame
-	void Update () {
-		bool spaceDown = Input.GetKeyDown (KeyCode.Space);	
-		if (spaceDown) {
-			animator.SetTrigger("JumpTrigger");
+	void OnCollisionEnter(Collision collision) {
+		if (collision.transform.parent.tag.Equals(Tags.GOAL_SEGMENT)) {
+			gameOverAC.SetTrigger ("Win");
+		} else {
+			gameOverAC.SetTrigger ("Lose");
 		}
 	}
 }

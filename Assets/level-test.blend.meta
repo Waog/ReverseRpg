@@ -156,6 +156,60 @@ ModelImporter:
     100296: MapObj_044
     100298: MapObj_045
     100300: MapObj_046
+    100302: BaseObj_047
+    100304: BaseObj_048
+    100306: BaseObj_049
+    100308: ColliderObj_005
+    100310: ColliderObj_006
+    100312: ColliderObj_007
+    100314: ColliderObj_008
+    100316: ColliderObj_009
+    100318: ColliderObj_010
+    100320: ColliderObj_011
+    100322: ColliderObj_012
+    100324: ColliderObj_013
+    100326: ColliderObj_014
+    100328: ColliderObj_015
+    100330: ColliderObj_016
+    100332: ColliderObj_017
+    100334: ColliderObj_018
+    100336: ColliderObj_019
+    100338: ColliderObj_020
+    100340: ColliderObj_021
+    100342: ColliderObj_022
+    100344: ColliderObj_023
+    100346: ColliderObj_024
+    100348: ColliderObj_025
+    100350: ColliderObj_026
+    100352: ColliderObj_027
+    100354: ColliderObj_028
+    100356: ColliderObj_029
+    100358: ColliderObj_030
+    100360: ColliderObj_031
+    100362: ColliderObj_032
+    100364: ColliderObj_033
+    100366: ColliderObj_034
+    100368: ColliderObj_035
+    100370: ColliderObj_036
+    100372: ColliderObj_037
+    100374: ColliderObj_038
+    100376: ColliderObj_039
+    100378: ColliderObj_040
+    100380: ColliderObj_041
+    100382: ColliderObj_042
+    100384: ColliderObj_043
+    100386: ColliderObj_044
+    100388: ColliderObj_045
+    100390: ColliderObj_046
+    100392: ColliderObj_047
+    100394: ColliderObj_048
+    100396: ColliderObj_049
+    100398: I-Segment_035
+    100400: I-Segment_036
+    100402: I-Segment_037
+    100404: MapObj_047
+    100406: MapObj_048
+    100408: MapObj_049
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -307,6 +361,60 @@ ModelImporter:
     400296: MapObj_044
     400298: MapObj_045
     400300: MapObj_046
+    400302: BaseObj_047
+    400304: BaseObj_048
+    400306: BaseObj_049
+    400308: ColliderObj_005
+    400310: ColliderObj_006
+    400312: ColliderObj_007
+    400314: ColliderObj_008
+    400316: ColliderObj_009
+    400318: ColliderObj_010
+    400320: ColliderObj_011
+    400322: ColliderObj_012
+    400324: ColliderObj_013
+    400326: ColliderObj_014
+    400328: ColliderObj_015
+    400330: ColliderObj_016
+    400332: ColliderObj_017
+    400334: ColliderObj_018
+    400336: ColliderObj_019
+    400338: ColliderObj_020
+    400340: ColliderObj_021
+    400342: ColliderObj_022
+    400344: ColliderObj_023
+    400346: ColliderObj_024
+    400348: ColliderObj_025
+    400350: ColliderObj_026
+    400352: ColliderObj_027
+    400354: ColliderObj_028
+    400356: ColliderObj_029
+    400358: ColliderObj_030
+    400360: ColliderObj_031
+    400362: ColliderObj_032
+    400364: ColliderObj_033
+    400366: ColliderObj_034
+    400368: ColliderObj_035
+    400370: ColliderObj_036
+    400372: ColliderObj_037
+    400374: ColliderObj_038
+    400376: ColliderObj_039
+    400378: ColliderObj_040
+    400380: ColliderObj_041
+    400382: ColliderObj_042
+    400384: ColliderObj_043
+    400386: ColliderObj_044
+    400388: ColliderObj_045
+    400390: ColliderObj_046
+    400392: ColliderObj_047
+    400394: ColliderObj_048
+    400396: ColliderObj_049
+    400398: I-Segment_035
+    400400: I-Segment_036
+    400402: I-Segment_037
+    400404: MapObj_047
+    400406: MapObj_048
+    400408: MapObj_049
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
@@ -456,6 +564,57 @@ ModelImporter:
     2300292: MapObj_044
     2300294: MapObj_045
     2300296: MapObj_046
+    2300298: BaseObj_047
+    2300300: BaseObj_048
+    2300302: BaseObj_049
+    2300304: ColliderObj_005
+    2300306: ColliderObj_006
+    2300308: ColliderObj_007
+    2300310: ColliderObj_008
+    2300312: ColliderObj_009
+    2300314: ColliderObj_010
+    2300316: ColliderObj_011
+    2300318: ColliderObj_012
+    2300320: ColliderObj_013
+    2300322: ColliderObj_014
+    2300324: ColliderObj_015
+    2300326: ColliderObj_016
+    2300328: ColliderObj_017
+    2300330: ColliderObj_018
+    2300332: ColliderObj_019
+    2300334: ColliderObj_020
+    2300336: ColliderObj_021
+    2300338: ColliderObj_022
+    2300340: ColliderObj_023
+    2300342: ColliderObj_024
+    2300344: ColliderObj_025
+    2300346: ColliderObj_026
+    2300348: ColliderObj_027
+    2300350: ColliderObj_028
+    2300352: ColliderObj_029
+    2300354: ColliderObj_030
+    2300356: ColliderObj_031
+    2300358: ColliderObj_032
+    2300360: ColliderObj_033
+    2300362: ColliderObj_034
+    2300364: ColliderObj_035
+    2300366: ColliderObj_036
+    2300368: ColliderObj_037
+    2300370: ColliderObj_038
+    2300372: ColliderObj_039
+    2300374: ColliderObj_040
+    2300376: ColliderObj_041
+    2300378: ColliderObj_042
+    2300380: ColliderObj_043
+    2300382: ColliderObj_044
+    2300384: ColliderObj_045
+    2300386: ColliderObj_046
+    2300388: ColliderObj_047
+    2300390: ColliderObj_048
+    2300392: ColliderObj_049
+    2300394: MapObj_047
+    2300396: MapObj_048
+    2300398: MapObj_049
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
@@ -605,6 +764,57 @@ ModelImporter:
     3300292: MapObj_044
     3300294: MapObj_045
     3300296: MapObj_046
+    3300298: BaseObj_047
+    3300300: BaseObj_048
+    3300302: BaseObj_049
+    3300304: ColliderObj_005
+    3300306: ColliderObj_006
+    3300308: ColliderObj_007
+    3300310: ColliderObj_008
+    3300312: ColliderObj_009
+    3300314: ColliderObj_010
+    3300316: ColliderObj_011
+    3300318: ColliderObj_012
+    3300320: ColliderObj_013
+    3300322: ColliderObj_014
+    3300324: ColliderObj_015
+    3300326: ColliderObj_016
+    3300328: ColliderObj_017
+    3300330: ColliderObj_018
+    3300332: ColliderObj_019
+    3300334: ColliderObj_020
+    3300336: ColliderObj_021
+    3300338: ColliderObj_022
+    3300340: ColliderObj_023
+    3300342: ColliderObj_024
+    3300344: ColliderObj_025
+    3300346: ColliderObj_026
+    3300348: ColliderObj_027
+    3300350: ColliderObj_028
+    3300352: ColliderObj_029
+    3300354: ColliderObj_030
+    3300356: ColliderObj_031
+    3300358: ColliderObj_032
+    3300360: ColliderObj_033
+    3300362: ColliderObj_034
+    3300364: ColliderObj_035
+    3300366: ColliderObj_036
+    3300368: ColliderObj_037
+    3300370: ColliderObj_038
+    3300372: ColliderObj_039
+    3300374: ColliderObj_040
+    3300376: ColliderObj_041
+    3300378: ColliderObj_042
+    3300380: ColliderObj_043
+    3300382: ColliderObj_044
+    3300384: ColliderObj_045
+    3300386: ColliderObj_046
+    3300388: ColliderObj_047
+    3300390: ColliderObj_048
+    3300392: ColliderObj_049
+    3300394: MapObj_047
+    3300396: MapObj_048
+    3300398: MapObj_049
     4300000: Cube_001
     4300002: Cube
     4300004: I-Segment_034
@@ -753,6 +963,57 @@ ModelImporter:
     4300290: BaseObj_010
     4300292: BaseObj_009
     4300294: MapObj_009
+    4300296: BaseObj_049
+    4300298: ColliderObj_049
+    4300300: MapObj_049
+    4300302: MapObj_048
+    4300304: ColliderObj_048
+    4300306: BaseObj_048
+    4300308: ColliderObj_046
+    4300310: MapObj_047
+    4300312: ColliderObj_047
+    4300314: BaseObj_047
+    4300316: ColliderObj_042
+    4300318: ColliderObj_045
+    4300320: ColliderObj_044
+    4300322: ColliderObj_043
+    4300324: ColliderObj_041
+    4300326: ColliderObj_040
+    4300328: ColliderObj_027
+    4300330: ColliderObj_039
+    4300332: ColliderObj_038
+    4300334: ColliderObj_037
+    4300336: ColliderObj_036
+    4300338: ColliderObj_035
+    4300340: ColliderObj_034
+    4300342: ColliderObj_033
+    4300344: ColliderObj_032
+    4300346: ColliderObj_031
+    4300348: ColliderObj_030
+    4300350: ColliderObj_029
+    4300352: ColliderObj_028
+    4300354: ColliderObj_026
+    4300356: ColliderObj_025
+    4300358: ColliderObj_024
+    4300360: ColliderObj_023
+    4300362: ColliderObj_022
+    4300364: ColliderObj_021
+    4300366: ColliderObj_020
+    4300368: ColliderObj_019
+    4300370: ColliderObj_018
+    4300372: ColliderObj_017
+    4300374: ColliderObj_016
+    4300376: ColliderObj_015
+    4300378: ColliderObj_014
+    4300380: ColliderObj_013
+    4300382: ColliderObj_012
+    4300384: ColliderObj_011
+    4300386: ColliderObj_010
+    4300388: ColliderObj_009
+    4300390: ColliderObj_008
+    4300392: ColliderObj_007
+    4300394: ColliderObj_006
+    4300396: ColliderObj_005
     7400000: Default Take
     9500000: //RootNode
   materials:

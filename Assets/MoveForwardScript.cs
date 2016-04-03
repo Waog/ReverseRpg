@@ -75,9 +75,5 @@ public class MoveForwardScript : MonoBehaviour {
 		if (other.transform.tag.Equals(Tags.SEGMENT_COLLIDER)){
 			enteredTurnSegment = other.transform;
 		}
-
-		if (other.transform.parent.tag.Equals(Tags.GOAL_SEGMENT)){
-			Debug.Log ("WIN!!!");
-		}
 	}
 }

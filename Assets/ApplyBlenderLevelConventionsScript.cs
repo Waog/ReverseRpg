@@ -17,6 +17,8 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 		AddLayers (element);
 		AddTags (element);
 		HideColliderMeshes (element);
+		DeleteTemplate (element);
+		FillPlaceHolder (element);
 
 		for (int i = 0; i < element.childCount; i++) {
 			ApplyBlenderLevelConventions (element.GetChild(i));
@@ -48,6 +50,23 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	void HideColliderMeshes(Transform transform) {
 		if (transform.name.Contains(COLLIDER_OBJ)) {
 			transform.GetComponent<MeshRenderer> ().enabled = false;
+		}
+	}
+
+	void DeleteTemplate(Transform transform) {
+		if (transform.name.Contains("Template")) {
+			Destroy (transform.gameObject);
+		}
+	}
+
+	void FillPlaceHolder(Transform transform) {
+		if (transform.name.Contains("Placeholder")) {
+			int indexOfPlaceholder = transform.name.IndexOf ("Placeholder");
+			string nameBeforePlaceholder = transform.name.Substring (0, indexOfPlaceholder);
+			GameObject replacerPrefab = GetComponent<ReplacementPrefabs> ().getByName (nameBeforePlaceholder);
+			GameObject newObject = (GameObject) Instantiate (replacerPrefab, transform.position, transform.rotation);
+			newObject.transform.parent = transform.parent;
+			Destroy (transform.gameObject);
 		}
 	}
 }

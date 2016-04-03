@@ -211,6 +211,34 @@ ModelImporter:
     100406: MapObj_048
     100408: MapObj_049
     100410: GoalSegment
+    100412: Door_proxy
+    100414: Door
+    100416: Door_0
+    100418: Suzanne
+    100420: Suzanne_0
+    100422: DoorGroupPosition
+    100424: DoorGroupPosition_001
+    100426: Empty
+    100428: Empty_001
+    100430: DoorGroupPlainAxes
+    100432: DoorGroupPlainAxes_001
+    100434: Door_1
+    100436: Door_2
+    100438: DoorGroupPlainAxes_002
+    100440: DoorGroupPlainAxes_003
+    100442: Suzanne_1
+    100444: Suzanne_2
+    100446: DoorTemplate
+    100448: DoorTemplate_0
+    100450: DoorTemplate_1
+    100452: DoorTemplate_2
+    100454: DoorPlaceholder
+    100456: DoorPlaceholder_001
+    100458: DoorPlaceholder_002
+    100460: DoorPlaceholder_003
+    100462: Empty_0
+    100464: Empty_1
+    100466: Empty_2
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -417,6 +445,34 @@ ModelImporter:
     400406: MapObj_048
     400408: MapObj_049
     400410: GoalSegment
+    400412: Door_proxy
+    400414: Door
+    400416: Door_0
+    400418: Suzanne
+    400420: Suzanne_0
+    400422: DoorGroupPosition
+    400424: DoorGroupPosition_001
+    400426: Empty
+    400428: Empty_001
+    400430: DoorGroupPlainAxes
+    400432: DoorGroupPlainAxes_001
+    400434: Door_1
+    400436: Door_2
+    400438: DoorGroupPlainAxes_002
+    400440: DoorGroupPlainAxes_003
+    400442: Suzanne_1
+    400444: Suzanne_2
+    400446: DoorTemplate
+    400448: DoorTemplate_0
+    400450: DoorTemplate_1
+    400452: DoorTemplate_2
+    400454: DoorPlaceholder
+    400456: DoorPlaceholder_001
+    400458: DoorPlaceholder_002
+    400460: DoorPlaceholder_003
+    400462: Empty_0
+    400464: Empty_1
+    400466: Empty_2
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
@@ -617,6 +673,21 @@ ModelImporter:
     2300394: MapObj_047
     2300396: MapObj_048
     2300398: MapObj_049
+    2300400: Door_proxy
+    2300402: Door
+    2300404: Door_0
+    2300406: Suzanne
+    2300408: Suzanne_0
+    2300410: DoorGroupPosition
+    2300412: DoorGroupPosition_001
+    2300414: Door_1
+    2300416: Door_2
+    2300418: Suzanne_1
+    2300420: Suzanne_2
+    2300422: DoorTemplate
+    2300424: DoorTemplate_0
+    2300426: DoorTemplate_1
+    2300428: DoorTemplate_2
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
@@ -817,6 +888,21 @@ ModelImporter:
     3300394: MapObj_047
     3300396: MapObj_048
     3300398: MapObj_049
+    3300400: Door_proxy
+    3300402: Door
+    3300404: Door_0
+    3300406: Suzanne
+    3300408: Suzanne_0
+    3300410: DoorGroupPosition
+    3300412: DoorGroupPosition_001
+    3300414: Door_1
+    3300416: Door_2
+    3300418: Suzanne_1
+    3300420: Suzanne_2
+    3300422: DoorTemplate
+    3300424: DoorTemplate_0
+    3300426: DoorTemplate_1
+    3300428: DoorTemplate_2
     4300000: Cube_001
     4300002: Cube
     4300004: I-Segment_034
@@ -1016,6 +1102,21 @@ ModelImporter:
     4300392: ColliderObj_007
     4300394: ColliderObj_006
     4300396: ColliderObj_005
+    4300398: Door_proxy
+    4300400: Door
+    4300402: Door_0
+    4300404: Suzanne
+    4300406: Suzanne_0
+    4300408: DoorGroupPosition_001
+    4300410: DoorGroupPosition
+    4300412: Door_1
+    4300414: Door_2
+    4300416: Suzanne_1
+    4300418: Suzanne_2
+    4300420: DoorTemplate
+    4300422: DoorTemplate_0
+    4300424: DoorTemplate_1
+    4300426: DoorTemplate_2
     7400000: Default Take
     9500000: //RootNode
   materials:

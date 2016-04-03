@@ -239,6 +239,10 @@ ModelImporter:
     100462: Empty_0
     100464: Empty_1
     100466: Empty_2
+    100468: MapObj_0
+    100470: MapObj_1
+    100472: MapObj_2
+    100474: MapObj_3
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -473,6 +477,10 @@ ModelImporter:
     400462: Empty_0
     400464: Empty_1
     400466: Empty_2
+    400468: MapObj_0
+    400470: MapObj_1
+    400472: MapObj_2
+    400474: MapObj_3
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
@@ -688,6 +696,10 @@ ModelImporter:
     2300424: DoorTemplate_0
     2300426: DoorTemplate_1
     2300428: DoorTemplate_2
+    2300430: MapObj_0
+    2300432: MapObj_1
+    2300434: MapObj_2
+    2300436: MapObj_3
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
@@ -903,6 +915,10 @@ ModelImporter:
     3300424: DoorTemplate_0
     3300426: DoorTemplate_1
     3300428: DoorTemplate_2
+    3300430: MapObj_0
+    3300432: MapObj_1
+    3300434: MapObj_2
+    3300436: MapObj_3
     4300000: Cube_001
     4300002: Cube
     4300004: I-Segment_034
@@ -1117,6 +1133,10 @@ ModelImporter:
     4300422: DoorTemplate_0
     4300424: DoorTemplate_1
     4300426: DoorTemplate_2
+    4300428: MapObj_0
+    4300430: MapObj_1
+    4300432: MapObj_2
+    4300434: MapObj_3
     7400000: Default Take
     9500000: //RootNode
   materials:

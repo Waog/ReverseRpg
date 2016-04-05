@@ -243,6 +243,18 @@ ModelImporter:
     100470: MapObj_1
     100472: MapObj_2
     100474: MapObj_3
+    100476: Cylinder
+    100478: Cylinder_0
+    100480: handle
+    100482: handle_0
+    100484: mount
+    100486: mount_0
+    100488: stick
+    100490: stick_0
+    100492: SwitchPlaceholder
+    100494: SwitchPlaceholder_001
+    100496: switchTemplate
+    100498: switchTemplate_0
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -481,6 +493,18 @@ ModelImporter:
     400470: MapObj_1
     400472: MapObj_2
     400474: MapObj_3
+    400476: Cylinder
+    400478: Cylinder_0
+    400480: handle
+    400482: handle_0
+    400484: mount
+    400486: mount_0
+    400488: stick
+    400490: stick_0
+    400492: SwitchPlaceholder
+    400494: SwitchPlaceholder_001
+    400496: switchTemplate
+    400498: switchTemplate_0
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
@@ -700,6 +724,14 @@ ModelImporter:
     2300432: MapObj_1
     2300434: MapObj_2
     2300436: MapObj_3
+    2300438: Cylinder
+    2300440: Cylinder_0
+    2300442: handle
+    2300444: handle_0
+    2300446: mount
+    2300448: mount_0
+    2300450: stick
+    2300452: stick_0
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
@@ -919,6 +951,14 @@ ModelImporter:
     3300432: MapObj_1
     3300434: MapObj_2
     3300436: MapObj_3
+    3300438: Cylinder
+    3300440: Cylinder_0
+    3300442: handle
+    3300444: handle_0
+    3300446: mount
+    3300448: mount_0
+    3300450: stick
+    3300452: stick_0
     4300000: Cube_001
     4300002: Cube
     4300004: I-Segment_034
@@ -1137,6 +1177,14 @@ ModelImporter:
     4300430: MapObj_1
     4300432: MapObj_2
     4300434: MapObj_3
+    4300436: Cylinder
+    4300438: mount
+    4300440: Cylinder_0
+    4300442: stick
+    4300444: stick_0
+    4300446: handle
+    4300448: handle_0
+    4300450: mount_0
     7400000: Default Take
     9500000: //RootNode
   materials:

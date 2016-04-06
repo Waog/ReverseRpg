@@ -10,23 +10,28 @@ ModelImporter:
     100004: mount
     100006: stick
     100008: //RootNode
+    100010: TriggerObj
     400000: Cylinder
     400002: handle
     400004: mount
     400006: stick
     400008: //RootNode
+    400010: TriggerObj
     2300000: Cylinder
     2300002: handle
     2300004: mount
     2300006: stick
+    2300008: TriggerObj
     3300000: Cylinder
     3300002: handle
     3300004: mount
     3300006: stick
+    3300008: TriggerObj
     4300000: Cylinder
     4300002: stick
     4300004: handle
     4300006: mount
+    4300008: TriggerObj
     7400000: UpState
     7400002: DownState
     9500000: //RootNode

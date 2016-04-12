@@ -11,26 +11,31 @@ ModelImporter:
     100006: DoorTemplate
     100008: Empty
     100010: MapObj
+    100012: ColliderObj
     400000: //RootNode
     400002: Suzanne
     400004: Door
     400006: DoorTemplate
     400008: Empty
     400010: MapObj
+    400012: ColliderObj
     2300000: //RootNode
     2300002: Suzanne
     2300004: Door
     2300006: DoorTemplate
     2300008: MapObj
+    2300010: ColliderObj
     3300000: //RootNode
     3300002: Suzanne
     3300004: Door
     3300006: DoorTemplate
     3300008: MapObj
+    3300010: ColliderObj
     4300000: Door
     4300002: Suzanne
     4300004: DoorTemplate
     4300006: MapObj
+    4300008: ColliderObj
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -255,6 +255,9 @@ ModelImporter:
     100494: SwitchPlaceholder_001
     100496: switchTemplate
     100498: switchTemplate_0
+    100500: ColliderObj_0
+    100502: ColliderObj_1
+    100504: ColliderObj_2
     400000: Cube
     400002: Cube_001
     400004: //RootNode
@@ -505,6 +508,9 @@ ModelImporter:
     400494: SwitchPlaceholder_001
     400496: switchTemplate
     400498: switchTemplate_0
+    400500: ColliderObj_0
+    400502: ColliderObj_1
+    400504: ColliderObj_2
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
@@ -732,6 +738,9 @@ ModelImporter:
     2300448: mount_0
     2300450: stick
     2300452: stick_0
+    2300454: ColliderObj_0
+    2300456: ColliderObj_1
+    2300458: ColliderObj_2
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
@@ -959,6 +968,9 @@ ModelImporter:
     3300448: mount_0
     3300450: stick
     3300452: stick_0
+    3300454: ColliderObj_0
+    3300456: ColliderObj_1
+    3300458: ColliderObj_2
     4300000: Cube_001
     4300002: Cube
     4300004: I-Segment_034
@@ -1185,6 +1197,9 @@ ModelImporter:
     4300446: handle
     4300448: handle_0
     4300450: mount_0
+    4300452: ColliderObj_0
+    4300454: ColliderObj_1
+    4300456: ColliderObj_2
     7400000: Default Take
     9500000: //RootNode
   materials:

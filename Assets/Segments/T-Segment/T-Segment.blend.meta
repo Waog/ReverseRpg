@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 3b767a0906d31344498f249a87aaea1a
-timeCreated: 1460491499
+guid: 57d99521cb8f32644b91c52f91cced1f
+timeCreated: 1460491525
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -216,14 +216,14 @@ ModelImporter:
     100416: MapObj_2
     100418: mount
     100420: O-Segment
-    100422: //RootNode
-    100424: stick
-    100426: Suzanne
-    100428: Suzanne_0
-    100430: Suzanne_1
-    100432: SwitchPlaceholder_001
-    100434: switchTemplate
-    100436: T-Segment
+    100422: stick
+    100424: Suzanne
+    100426: Suzanne_0
+    100428: Suzanne_1
+    100430: SwitchPlaceholder_001
+    100432: switchTemplate
+    100434: T-Segment
+    100436: //RootNode
     100438: T-Segment_001
     100440: T-Segment_002
     100442: T-Segment_003
@@ -438,13 +438,13 @@ ModelImporter:
     400416: MapObj_2
     400418: mount
     400420: O-Segment
-    400422: //RootNode
-    400424: stick
-    400426: Suzanne
-    400428: Suzanne_0
-    400430: Suzanne_1
-    400432: SwitchPlaceholder_001
-    400434: switchTemplate
+    400422: stick
+    400424: Suzanne
+    400426: Suzanne_0
+    400428: Suzanne_1
+    400430: SwitchPlaceholder_001
+    400432: switchTemplate
+    400434: //RootNode
     400436: T-Segment
     400438: T-Segment_001
     400440: T-Segment_002

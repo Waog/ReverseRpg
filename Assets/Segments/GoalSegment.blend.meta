@@ -1,15 +1,27 @@
 fileFormatVersion: 2
-guid: c84517f4601e5f247afd6ff76dadb070
-timeCreated: 1458508390
+guid: 5fb216377a7cf73468573881f7fa6462
+timeCreated: 1460719359
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube_000
+    100000: BaseObj
+    100002: ColliderObj
+    100004: //RootNode
+    100006: MapObj
+    400000: BaseObj
+    400002: ColliderObj
+    400004: //RootNode
+    400006: MapObj
+    2300000: BaseObj
+    2300002: ColliderObj
+    2300004: MapObj
+    3300000: BaseObj
+    3300002: ColliderObj
+    3300004: MapObj
+    4300000: MapObj
+    4300002: ColliderObj
+    4300004: BaseObj
     7400000: Default Take
     9500000: //RootNode
   materials:

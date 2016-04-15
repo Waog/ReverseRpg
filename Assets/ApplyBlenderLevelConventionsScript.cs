@@ -9,6 +9,10 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	const string SWITCH = "SwitchPlaceholder";
 	const string DOOR = "DoorPlaceholder";
 
+	const string PLACEHOLDER = "Placeholder";
+
+	const string TEMPLATE = "Template";
+
 	const string MAP_OBJ = "MapObj";
 
 	public GameObject levelPrefab;
@@ -109,14 +113,14 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	}
 
 	void DeleteTemplate(Transform transform) {
-		if (transform.name.Contains("Template")) {
+		if (transform.name.Contains (TEMPLATE)) {
 			DestroyImmediate (transform.gameObject);
 		}
 	}
 
 	void FillPlaceHolder(Transform transform) {
-		if (transform.name.Contains("Placeholder")) {
-			int indexOfPlaceholder = transform.name.IndexOf ("Placeholder");
+		if (transform.name.Contains (PLACEHOLDER)) {
+			int indexOfPlaceholder = transform.name.IndexOf (PLACEHOLDER);
 			string nameBeforePlaceholder = transform.name.Substring (0, indexOfPlaceholder);
 			GameObject replacerPrefab = GetComponent<ReplacementPrefabs> ().getByName (nameBeforePlaceholder);
 			GameObject newObject = (GameObject) Instantiate (replacerPrefab, transform.position, transform.rotation);

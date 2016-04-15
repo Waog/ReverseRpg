@@ -275,6 +275,8 @@ ModelImporter:
     100534: DoorPlaceholder
     100536: DoorTemplate
     100538: Suzanne
+    100540: DoorPlaceholderA
+    100542: SwitchPlaceholderA
     400000: //RootNode
     400002: BaseObj
     400004: ColliderObj
@@ -545,6 +547,8 @@ ModelImporter:
     400534: DoorPlaceholder
     400536: DoorTemplate
     400538: Suzanne
+    400540: DoorPlaceholderA
+    400542: SwitchPlaceholderA
     2300000: //RootNode
     2300002: BaseObj
     2300004: ColliderObj

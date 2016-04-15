@@ -266,6 +266,15 @@ ModelImporter:
     100516: I-SegmentTemplate_30
     100518: I-SegmentTemplate_31
     100520: T-SegmentTemplate_1
+    100522: Cylinder
+    100524: handle
+    100526: mount
+    100528: stick
+    100530: SwitchPlaceholder
+    100532: switchTemplate
+    100534: DoorPlaceholder
+    100536: DoorTemplate
+    100538: Suzanne
     400000: //RootNode
     400002: BaseObj
     400004: ColliderObj
@@ -527,6 +536,15 @@ ModelImporter:
     400516: I-SegmentTemplate_30
     400518: I-SegmentTemplate_31
     400520: T-SegmentTemplate_1
+    400522: Cylinder
+    400524: handle
+    400526: mount
+    400528: stick
+    400530: SwitchPlaceholder
+    400532: switchTemplate
+    400534: DoorPlaceholder
+    400536: DoorTemplate
+    400538: Suzanne
     2300000: //RootNode
     2300002: BaseObj
     2300004: ColliderObj
@@ -665,6 +683,12 @@ ModelImporter:
     2300270: MapObj_1
     2300272: MapObj_2
     2300274: MapObj_3
+    2300276: Cylinder
+    2300278: handle
+    2300280: mount
+    2300282: stick
+    2300284: DoorTemplate
+    2300286: Suzanne
     3300000: //RootNode
     3300002: BaseObj
     3300004: ColliderObj
@@ -803,6 +827,12 @@ ModelImporter:
     3300270: MapObj_1
     3300272: MapObj_2
     3300274: MapObj_3
+    3300276: Cylinder
+    3300278: handle
+    3300280: mount
+    3300282: stick
+    3300284: DoorTemplate
+    3300286: Suzanne
     4300000: Cube
     4300002: BaseObj
     4300004: ColliderObj
@@ -940,6 +970,12 @@ ModelImporter:
     4300268: MapObj_1
     4300270: MapObj_2
     4300272: MapObj_3
+    4300274: Cylinder
+    4300276: stick
+    4300278: handle
+    4300280: mount
+    4300282: DoorTemplate
+    4300284: Suzanne
     7400000: Default Take
     9500000: //RootNode
   materials:

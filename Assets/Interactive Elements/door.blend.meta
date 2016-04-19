@@ -12,6 +12,9 @@ ModelImporter:
     100008: Empty
     100010: MapObj
     100012: ColliderObj
+    100014: BaseObj
+    100016: Sphere
+    100018: Cube
     400000: //RootNode
     400002: Suzanne
     400004: Door
@@ -19,24 +22,37 @@ ModelImporter:
     400008: Empty
     400010: MapObj
     400012: ColliderObj
+    400014: BaseObj
+    400016: Sphere
+    400018: Cube
     2300000: //RootNode
     2300002: Suzanne
     2300004: Door
     2300006: DoorTemplate
     2300008: MapObj
     2300010: ColliderObj
+    2300012: BaseObj
+    2300014: Sphere
+    2300016: Cube
     3300000: //RootNode
     3300002: Suzanne
     3300004: Door
     3300006: DoorTemplate
     3300008: MapObj
     3300010: ColliderObj
+    3300012: BaseObj
+    3300014: Sphere
+    3300016: Cube
     4300000: Door
     4300002: Suzanne
     4300004: DoorTemplate
     4300006: MapObj
     4300008: ColliderObj
-    7400000: Default Take
+    4300010: BaseObj
+    4300012: Sphere
+    4300014: Cube
+    7400000: ClosedState
+    7400002: OpenState
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -45,20 +61,96 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleRotations: 0
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ClosedState
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseObj
+        weight: 1
+      - path: BaseObj/ColliderObj
+        weight: 1
+      - path: BaseObj/Suzanne
+        weight: 1
+      - path: MapObj
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OpenState
+      takeName: Default Take
+      firstFrame: 10
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BaseObj
+        weight: 1
+      - path: BaseObj/ColliderObj
+        weight: 1
+      - path: BaseObj/Suzanne
+        weight: 1
+      - path: MapObj
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

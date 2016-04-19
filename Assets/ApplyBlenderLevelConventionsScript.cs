@@ -91,6 +91,7 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 			GameObject colliderGo = transform.GetComponentInChildren<Collider> ().gameObject;
 			colliderGo.AddComponent<SwitchScript> ();
 			Animator animator = transform.GetComponentInChildren<Animator> ();
+			animator.applyRootMotion = true;
 			RuntimeAnimatorController rac = Resources.Load("switchAC") as RuntimeAnimatorController;
 			animator.runtimeAnimatorController = rac;
 
@@ -100,6 +101,7 @@ public class ApplyBlenderLevelConventionsScript : MonoBehaviour {
 	void PrepareDoors (Transform transform) {
 		if (transform.name.Contains(DOOR)) {
 			Animator animator = transform.GetComponentInChildren<Animator> ();
+			animator.applyRootMotion = true;
 			RuntimeAnimatorController rac = Resources.Load("doorAC") as RuntimeAnimatorController;
 			animator.runtimeAnimatorController = rac;
 			animator.gameObject.AddComponent<OpenDoorScript> ();

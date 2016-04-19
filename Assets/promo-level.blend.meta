@@ -277,6 +277,7 @@ ModelImporter:
     100538: Suzanne
     100540: DoorPlaceholderA
     100542: SwitchPlaceholderA
+    100544: Sphere
     400000: //RootNode
     400002: BaseObj
     400004: ColliderObj
@@ -549,6 +550,7 @@ ModelImporter:
     400538: Suzanne
     400540: DoorPlaceholderA
     400542: SwitchPlaceholderA
+    400544: Sphere
     2300000: //RootNode
     2300002: BaseObj
     2300004: ColliderObj
@@ -693,6 +695,7 @@ ModelImporter:
     2300282: stick
     2300284: DoorTemplate
     2300286: Suzanne
+    2300288: Sphere
     3300000: //RootNode
     3300002: BaseObj
     3300004: ColliderObj
@@ -837,6 +840,7 @@ ModelImporter:
     3300282: stick
     3300284: DoorTemplate
     3300286: Suzanne
+    3300288: Sphere
     4300000: Cube
     4300002: BaseObj
     4300004: ColliderObj
@@ -980,6 +984,7 @@ ModelImporter:
     4300280: mount
     4300282: DoorTemplate
     4300284: Suzanne
+    4300286: Sphere
     7400000: Default Take
     9500000: //RootNode
   materials:

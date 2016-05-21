@@ -3,22 +3,24 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
+	public int JUMP_VELOCITY = 50;
+
 	public Animator gameOverAC;
 
-	bool isFalling = true;
+	bool grounded = false;
 
 	void Update() {
-		if(Input.GetButton("Jump") && !isFalling) {
+		if(Input.GetButton("Jump") && grounded) {
 			Vector3 oldVelocity = GetComponent<Rigidbody> ().velocity;
-			GetComponent<Rigidbody> ().velocity = new Vector3 (oldVelocity.x, oldVelocity.y + 5, oldVelocity.z);
+			GetComponent<Rigidbody> ().velocity = new Vector3 (oldVelocity.x, JUMP_VELOCITY, oldVelocity.z);
+			grounded = false;
 		}
 
-		isFalling = true;
 	}
 
 	void OnCollisionStay(Collision collision) {
-		if (collision.gameObject.layer.Equals (Layers.FLOOR)) {
-			isFalling = false;
+		if (collision.gameObject.layer.Equals (Layers.FLOOR) && GetComponent<Rigidbody> ().velocity.y <= 0) {
+			grounded = true;
 		}
 	}
 

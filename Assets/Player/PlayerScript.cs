@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	public int JUMP_VELOCITY = 50;
+	public int JUMP_VELOCITY = 8;
 
 	public Animator gameOverAC;
 
@@ -13,7 +13,7 @@ public class PlayerScript : MonoBehaviour {
 		if(Input.GetButton("Jump") && grounded) {
 			Vector3 oldVelocity = GetComponent<Rigidbody> ().velocity;
 			GetComponent<Rigidbody> ().velocity = new Vector3 (oldVelocity.x, JUMP_VELOCITY, oldVelocity.z);
-			grounded = false;
+			grounded = false;f
 		}
 
 	}

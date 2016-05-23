@@ -13,7 +13,7 @@ public class PlayerScript : MonoBehaviour {
 		if(Input.GetButton("Jump") && grounded) {
 			Vector3 oldVelocity = GetComponent<Rigidbody> ().velocity;
 			GetComponent<Rigidbody> ().velocity = new Vector3 (oldVelocity.x, JUMP_VELOCITY, oldVelocity.z);
-			grounded = false;f
+			grounded = false;
 		}
 
 	}

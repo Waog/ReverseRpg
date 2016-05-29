@@ -2,10 +2,16 @@
 using System.Collections;
 
 public class CoinScript : MonoBehaviour {
-	
+
+	CoinPouchScript coinPouchScript;
+
+	void Start() {
+		coinPouchScript = FindObjectOfType<CoinPouchScript> ();
+	}
+
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals(Tags.PLAYER)) {
-			FindObjectOfType<CoinPouchScript> ().collectedCoins++;
+			coinPouchScript.collectedCoins++;
 			Destroy (transform.parent.gameObject);
 		}
 	}

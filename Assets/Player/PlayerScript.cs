@@ -29,6 +29,8 @@ public class PlayerScript : MonoBehaviour {
 			gameOverAC.SetTrigger ("Win");
 		} else if (collision.gameObject.layer.Equals(Layers.WALL)) {
 			gameOverAC.SetTrigger ("Lose");
+		} else if (collision.transform.tag.Equals(Tags.TRAP)) {
+			gameOverAC.SetTrigger ("Lose");
 		}
 	}
 }

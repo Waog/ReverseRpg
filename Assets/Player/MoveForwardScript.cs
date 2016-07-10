@@ -11,7 +11,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	private bool waitingForHorizontalAxisInput = true;
 
-	private Transform enteredTurnSegment = null;
+	private Transform enteredSegment = null;
 
 	// Update is called once per frame
 	void Update () {
@@ -32,7 +32,7 @@ public class MoveForwardScript : MonoBehaviour {
 					//TODO TurnCharacterRight or switch Lane to right
 					if (wallDetectorRight.GetComponent<WallDetectorScript>().isDetectingWall ()) {
 						switchLaneAccordingToInput (player);
-					} else if(enteredTurnSegment != null){
+					} else if(enteredSegment != null){
 						turnAccordingToInput (player);
 					}	
 				}
@@ -41,7 +41,7 @@ public class MoveForwardScript : MonoBehaviour {
 					//TODO TurnCharacterLeft or switch Lane to left
 					if (wallDetectorLeft.GetComponent<WallDetectorScript>().isDetectingWall ()) {
 						switchLaneAccordingToInput (player);
-					} else if(enteredTurnSegment != null) {
+					} else if(enteredSegment != null) {
 						turnAccordingToInput (player);
 					}	
 				}
@@ -57,12 +57,12 @@ public class MoveForwardScript : MonoBehaviour {
 	{
 		transform.position = new Vector3 (player.position.x, 0, player.position.z);
 		transform.RotateAround (transform.position, Vector3.up, Input.GetAxisRaw ("Horizontal") * 90);
-		Vector3 globalDiffVectorToCurveCenter = enteredTurnSegment.position - transform.position;
+		Vector3 globalDiffVectorToCurveCenter = enteredSegment.position - transform.position;
 		Vector3 localDiffVectorToCurveCenter = transform.InverseTransformDirection (globalDiffVectorToCurveCenter);
 		Vector3 localDiffVectorToCurveCenterProjected = new Vector3 (localDiffVectorToCurveCenter.x, 0, 0);
 		Vector3 globalDiffVectorToCurveCenterProjected = transform.TransformDirection (localDiffVectorToCurveCenterProjected);
 		transform.position += globalDiffVectorToCurveCenterProjected;
-		enteredTurnSegment = null;
+		enteredSegment = null;
 		//					curPlayerPositionIndex = 2;
 		//					player.localPosition = new Vector3 (playerPositions [curPlayerPositionIndex], 0.1f, 0);
 	}
@@ -76,7 +76,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.transform.tag.Equals(Tags.SEGMENT_COLLIDER)){
-			enteredTurnSegment = other.transform;
+			enteredSegment = other.transform;
 		}
 	}
 }

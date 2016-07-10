@@ -6,6 +6,7 @@ public class MoveForwardScript : MonoBehaviour {
 	[Tooltip("in meter per second")]
 	public float speed = 3f;
 	public CameraMagnetActivationScript cameraMagnetDeactivationScript;
+	public WallDetectorScript wallDetectorScript;
 	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
 	private int curPlayerPositionIndex = 2;
 
@@ -29,8 +30,7 @@ public class MoveForwardScript : MonoBehaviour {
 				Transform wallDetectorRight = transform.FindChild ("wallDetectorRight");
 
 				if(Input.GetAxisRaw("Horizontal") > 0){
-					//TODO TurnCharacterRight or switch Lane to right
-					if (wallDetectorRight.GetComponent<WallDetectorScript>().isDetectingWall ()) {
+					if (wallDetectorScript.isDetectingWall ()) {
 						switchLaneAccordingToInput (player);
 					} else if(enteredSegment != null){
 						turnAccordingToInput (player);
@@ -38,8 +38,7 @@ public class MoveForwardScript : MonoBehaviour {
 				}
 
 				if(Input.GetAxisRaw("Horizontal") < 0){
-					//TODO TurnCharacterLeft or switch Lane to left
-					if (wallDetectorLeft.GetComponent<WallDetectorScript>().isDetectingWall ()) {
+					if (wallDetectorScript.isDetectingWall ()) {
 						switchLaneAccordingToInput (player);
 					} else if(enteredSegment != null) {
 						turnAccordingToInput (player);

@@ -4,22 +4,14 @@ using System.Collections.Generic;
 
 public class WallDetectorScript : MonoBehaviour {
 
-	IList<Transform> CollidingWalls = new List<Transform>();
-
 	public bool isDetectingWall (){
-		return CollidingWalls.Count > 0; 
+		Ray ray = new Ray (transform.position + Vector3.up + 2 * Vector3.left, Vector3.left);
+
+		return Physics.Raycast (ray, 2, Layers.WALL);
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.layer.Equals (Layers.WALL)) {
-			CollidingWalls.Add (other.transform);	
-		}
+	void Update() {
+		Debug.DrawRay (transform.position + Vector3.up + 2 * Vector3.left, Vector3.left, Color.blue);
+		Debug.DrawRay (transform.position + Vector3.up + 2 * Vector3.right, Vector3.right, Color.green);
 	}
-
-	void OnTriggerExit(Collider other) {
-		if (other.gameObject.layer.Equals (Layers.WALL)) {
-			CollidingWalls.Remove (other.transform);
-		}
-	}
-	
 }

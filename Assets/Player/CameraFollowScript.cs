@@ -4,17 +4,17 @@ using System.Collections;
 public class CameraFollowScript : MonoBehaviour {
 
 	public Transform targetTransform;
-	private CameraMagnetDeactivationScript cameraMagnetDeactivationScript;
+	private CameraMagnetActivationScript cameraMagnetActivationScript;
 
 	[Tooltip("0 = camera doesn't move; 1 = camera is at target position instantly")]
 	public float drag = 0.2f;
 
 	void Start () {
-		cameraMagnetDeactivationScript = targetTransform.GetComponent<CameraMagnetDeactivationScript> ();
+		cameraMagnetActivationScript = targetTransform.GetComponent<CameraMagnetActivationScript> ();
 	}
 
 	void Update () {
-		if (cameraMagnetDeactivationScript.isActivated) {
+		if (cameraMagnetActivationScript.isActivated) {
 			transform.position = Vector3.Lerp (transform.position, targetTransform.position, drag);
 			Vector3 newEulerAngles = new Vector3 ();
 			newEulerAngles.x = Mathf.LerpAngle (transform.eulerAngles.x, targetTransform.eulerAngles.x, drag);

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraMagnetDeactivationScript : MonoBehaviour {
+public class CameraMagnetActivationScript : MonoBehaviour {
 
 	public bool isActivated = true;
 	

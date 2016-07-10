@@ -5,7 +5,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	[Tooltip("in meter per second")]
 	public float speed = 3f;
-	public CameraMagnetDeactivationScript cameraMagnetDeactivationScript;
+	public CameraMagnetActivationScript cameraMagnetDeactivationScript;
 	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
 	private int curPlayerPositionIndex = 2;
 

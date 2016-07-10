@@ -16,12 +16,15 @@ public class MoveForwardScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Translate (Vector3.forward * Time.deltaTime * speed);
+		Transform player = transform.GetChild (0);
+		transform.Translate (Vector3.forward * player.transform.localPosition.z);
+		player.transform.localPosition = new Vector3 (player.transform.localPosition.x, player.transform.localPosition.y, 0);
+
 
 		if(Input.GetAxisRaw("Horizontal") != 0) {
 			if(waitingForHorizontalAxisInput) {
 				waitingForHorizontalAxisInput = false;
 
-				Transform player = transform.GetChild (0);
 				Transform wallDetectorLeft = transform.FindChild ("wallDetectorLeft");
 				Transform wallDetectorRight = transform.FindChild ("wallDetectorRight");
 

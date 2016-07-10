@@ -26,11 +26,8 @@ public class MoveForwardScript : MonoBehaviour {
 			if(waitingForHorizontalAxisInput) {
 				waitingForHorizontalAxisInput = false;
 
-				Transform wallDetectorLeft = transform.FindChild ("wallDetectorLeft");
-				Transform wallDetectorRight = transform.FindChild ("wallDetectorRight");
-
 				if(Input.GetAxisRaw("Horizontal") > 0){
-					if (wallDetectorScript.isDetectingWall ()) {
+					if (wallDetectorScript.isDetectingWallRight ()) {
 						switchLaneAccordingToInput (player);
 					} else if(enteredSegment != null){
 						turnAccordingToInput (player);
@@ -38,7 +35,7 @@ public class MoveForwardScript : MonoBehaviour {
 				}
 
 				if(Input.GetAxisRaw("Horizontal") < 0){
-					if (wallDetectorScript.isDetectingWall ()) {
+					if (wallDetectorScript.isDetectingWallLeft ()) {
 						switchLaneAccordingToInput (player);
 					} else if(enteredSegment != null) {
 						turnAccordingToInput (player);

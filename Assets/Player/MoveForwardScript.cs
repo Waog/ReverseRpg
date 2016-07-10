@@ -5,7 +5,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	[Tooltip("in meter per second")]
 	public float speed = 3f;
-
+	public CameraMagnetDeactivationScript cameraMagnetDeactivationScript;
 	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
 	private int curPlayerPositionIndex = 2;
 
@@ -65,6 +65,7 @@ public class MoveForwardScript : MonoBehaviour {
 		enteredSegment = null;
 		//					curPlayerPositionIndex = 2;
 		//					player.localPosition = new Vector3 (playerPositions [curPlayerPositionIndex], 0.1f, 0);
+		cameraMagnetDeactivationScript.isActivated = true;
 	}
 
 	void switchLaneAccordingToInput (Transform player)

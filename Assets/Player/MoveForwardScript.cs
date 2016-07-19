@@ -5,6 +5,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	[Tooltip("in meter per second")]
 	public float speed = 3f;
+	public TurnScript turnScript;
 	public CameraMagnetActivationScript cameraMagnetDeactivationScript;
 	public WallDetectorScript wallDetectorScript;
 	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
@@ -51,13 +52,7 @@ public class MoveForwardScript : MonoBehaviour {
 
 	void turnAccordingToInput (Transform player)
 	{
-		transform.position = new Vector3 (player.position.x, 0, player.position.z);
-		transform.RotateAround (transform.position, Vector3.up, Input.GetAxisRaw ("Horizontal") * 90);
-		Vector3 globalDiffVectorToCurveCenter = enteredSegment.position - transform.position;
-		Vector3 localDiffVectorToCurveCenter = transform.InverseTransformDirection (globalDiffVectorToCurveCenter);
-		Vector3 localDiffVectorToCurveCenterProjected = new Vector3 (localDiffVectorToCurveCenter.x, 0, 0);
-		Vector3 globalDiffVectorToCurveCenterProjected = transform.TransformDirection (localDiffVectorToCurveCenterProjected);
-		transform.position += globalDiffVectorToCurveCenterProjected;
+		turnScript.turn (Input.GetAxisRaw ("Horizontal"), enteredSegment);
 		enteredSegment = null;
 		//					curPlayerPositionIndex = 2;
 		//					player.localPosition = new Vector3 (playerPositions [curPlayerPositionIndex], 0.1f, 0);

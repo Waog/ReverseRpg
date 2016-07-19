@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerScript : MonoBehaviour {
+public class JumpScript : MonoBehaviour {
 
 	public int JUMP_VELOCITY = 8;
-
-	public Animator gameOverAC;
 
 	bool grounded = false;
 
@@ -21,16 +19,6 @@ public class PlayerScript : MonoBehaviour {
 	void OnCollisionStay(Collision collision) {
 		if (collision.gameObject.layer.Equals (Layers.FLOOR) && GetComponent<Rigidbody> ().velocity.y <= 0) {
 			grounded = true;
-		}
-	}
-
-	void OnCollisionEnter(Collision collision) {
-		if (collision.transform.tag.Equals(Tags.GOAL_SEGMENT)) {
-			gameOverAC.SetTrigger ("Win");
-		} else if (collision.gameObject.layer.Equals(Layers.WALL)) {
-			gameOverAC.SetTrigger ("Lose");
-		} else if (collision.transform.tag.Equals(Tags.TRAP)) {
-			gameOverAC.SetTrigger ("Lose");
 		}
 	}
 }

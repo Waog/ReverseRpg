@@ -6,10 +6,9 @@ public class MoveForwardScript : MonoBehaviour {
 	[Tooltip("in meter per second")]
 	public float speed = 3f;
 	public TurnScript turnScript;
+	public SwitchLaneScript switchLaneScript;
 	public CameraMagnetActivationScript cameraMagnetDeactivationScript;
 	public WallDetectorScript wallDetectorScript;
-	private float[] playerPositions = { -1.9f, -0.95f, 0f, 0.95f, 1.9f };
-	private int curPlayerPositionIndex = 2;
 
 	private bool waitingForHorizontalAxisInput = true;
 
@@ -29,17 +28,17 @@ public class MoveForwardScript : MonoBehaviour {
 
 				if(Input.GetAxisRaw("Horizontal") > 0){
 					if (wallDetectorScript.isDetectingWallRight ()) {
-						switchLaneAccordingToInput (player);
+						switchLaneAccordingToInput ();
 					} else if(enteredSegment != null){
-						turnAccordingToInput (player);
+						turnAccordingToInput ();
 					}	
 				}
 
 				if(Input.GetAxisRaw("Horizontal") < 0){
 					if (wallDetectorScript.isDetectingWallLeft ()) {
-						switchLaneAccordingToInput (player);
+						switchLaneAccordingToInput ();
 					} else if(enteredSegment != null) {
-						turnAccordingToInput (player);
+						turnAccordingToInput ();
 					}	
 				}
 			}
@@ -50,20 +49,16 @@ public class MoveForwardScript : MonoBehaviour {
 		}    
 	}
 
-	void turnAccordingToInput (Transform player)
+	void turnAccordingToInput ()
 	{
 		turnScript.turn (Input.GetAxisRaw ("Horizontal"), enteredSegment);
 		enteredSegment = null;
-		//					curPlayerPositionIndex = 2;
-		//					player.localPosition = new Vector3 (playerPositions [curPlayerPositionIndex], 0.1f, 0);
 		cameraMagnetDeactivationScript.isActivated = true;
 	}
 
-	void switchLaneAccordingToInput (Transform player)
+	void switchLaneAccordingToInput ()
 	{
-		curPlayerPositionIndex += Mathf.RoundToInt (Input.GetAxisRaw ("Horizontal"));
-		curPlayerPositionIndex = Mathf.Clamp (curPlayerPositionIndex, 0, 4);
-		player.localPosition = new Vector3 (playerPositions [curPlayerPositionIndex], 0.1f, 0);
+		switchLaneScript.switchLane (Input.GetAxisRaw ("Horizontal"));
 	}
 
 	void OnTriggerEnter(Collider other) {
